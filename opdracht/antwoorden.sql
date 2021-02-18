@@ -19,11 +19,12 @@ SELECT name,year,publisher FROM `videogamesales` WHERE genre = 'Racing' and publ
 -- Opdracht 10
 SELECT AVG(EU_Sales) AS 'Average EU Sales', AVG(NA_Sales) AS 'Average NA Sales', AVG(JP_Sales) AS 'Average JP Sales' FROM `videogamesales`
 -- Opdracht 11
-
+DELETE FROM `videogamesales` WHERE publisher='Ubisoft' OR year=2012;
 -- Opdracht 12
-
+DELETE FROM `videogamesales` WHERE year=2012 OR publisher='Ubisoft';
 -- Opdracht 13
-
+DELETE FROM `videogamesales` WHERE genre='Adventure' and publisher='Nintendo';
 -- Opdracht 14
-
+DELETE FROM `videogamesales` WHERE publisher='Nintendo' and Global_Sales<1000;
 -- Opdracht 15
+DELETE FROM `videogamesales` WHERE year=1997 and NA_Sales>200000;
